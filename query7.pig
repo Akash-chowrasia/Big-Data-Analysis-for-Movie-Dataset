@@ -6,7 +6,7 @@
 
 
 
-a = load „/movies.csv‟ using PigStorage(„,‟) as (SNO,NAME,RYEAR,RATING,RUNTIME);
+a = load "/movies.csv" using PigStorage(",") as (SNO,NAME,RYEAR,RATING,RUNTIME);
 SPLIT a INTO x if RATING<3.5,y if (RATING>=3.5 and RATING<4.0),z if RATING>=4.0;
 
 -- OUTPUT:

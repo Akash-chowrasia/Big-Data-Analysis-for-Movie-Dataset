@@ -3,7 +3,7 @@
 -- Create a relation which limits the number of movies to 1000 and having a
 -- rating of more than 3 ?
 
-a = load „/movies.csv‟ using PigStorage(„,‟) as (SNO,NAME,RYEAR,RATING,RUNTIME);
+a = load "/movies.csv" using PigStorage(",") as (SNO,NAME,RYEAR,RATING,RUNTIME);
 b = filter a by RATING>3.0;
 c = limit b 1000;
 dump c;

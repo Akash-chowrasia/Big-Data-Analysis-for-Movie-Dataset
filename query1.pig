@@ -3,7 +3,7 @@
 -- List the movie names and rating of all movies having a rating greater than 4.3 ?
 
 
-a = load „/movies.csv‟ using PigStorage(„,‟) as (SNO,NAME,RYEAR,RATING,RUNTIME);
+a = load "/movies.csv" using PigStorage(",") as (SNO,NAME,RYEAR,RATING,RUNTIME);
 b = filter a by RATING>4.3;
 c = foreach b generate NAME,RATING;
 dump c;

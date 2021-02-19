@@ -3,7 +3,7 @@
 -- List the movie names and re1ease year of all movies released before 1990 and do
 -- not have a null in the rating.
 
-a = load „/movies.csv‟ using PigStorage(„,‟) as (SNO,NAME,RYEAR,RATING,RUNTIME);
+a = load "/movies.csv" using PigStorage(",") as (SNO,NAME,RYEAR,RATING,RUNTIME);
 b = filter a by RYEAR<1990 and RATING>0;
 c= foreach b generate NAME,RYEAR;
 dump c;

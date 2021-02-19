@@ -3,7 +3,7 @@
 -- Rank the movies in a continuous manner. Ranking should be based on the release
 -- year in Ascending number ?
 
-a = load „/movies.csv‟ using PigStorage(„,‟) as (SNO,NAME,RYEAR,RATING,RUNTIME);
+a = load "/movies.csv" using PigStorage(",") as (SNO,NAME,RYEAR,RATING,RUNTIME);
 b = rank a by RYEAR DENSE;
 dump b;
 

@@ -2,10 +2,10 @@
 
 -- Generate a 1% sample of this dataset and display and store it ?
 
-a = load „/movies.csv‟ using PigStorage(„,‟) as (SNO,NAME,RYEAR,RATING,RUNTIME);
+a = load "/movies.csv" using PigStorage(",") as (SNO,NAME,RYEAR,RATING,RUNTIME);
 b = sample a 0.01;
 dump b;
-store b into „/file‟;
+store b into "/file";
 
 -- OUTPUT:
 
