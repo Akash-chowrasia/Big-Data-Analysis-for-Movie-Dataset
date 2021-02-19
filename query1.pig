@@ -1,4 +1,6 @@
--- Query Statement : List the movie names and rating of all movies having a rating greater than 4.3 ?
+-- Query Statement : 
+
+-- List the movie names and rating of all movies having a rating greater than 4.3 ?
 
 
 a = load „/movies.csv‟ using PigStorage(„,‟) as (SNO,NAME,RYEAR,RATING,RUNTIME);
