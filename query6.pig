@@ -7,6 +7,7 @@ a = load „/movies.csv‟ using PigStorage(„,‟) as (SNO,NAME,RYEAR,RATING,R
 b = rank a by RYEAR DENSE;
 dump b;
 
+
 -- OUTPUT:
 
 -- (2,610,Cabiria,1914,2.9,7684)
