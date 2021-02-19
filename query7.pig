@@ -1,4 +1,5 @@
 -- Query Statement:
+
 -- Split this dataset into three relations, one containing movie data with rating
 -- <3.5, another with movie data containing rating>=3.5 but less than 4.0 and
 -- remaining in the third relation ?
