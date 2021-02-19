@@ -10,9 +10,9 @@
 
 ## To execute each Query you need to follow the step first
 
-<block>Step 1:</block><br>
+<bold>Step 1:</bold><br>
 <pre>Download dataset from the link given above.</pre>
-<block>Step 2:</block>
+<bold>Step 2:</bold>
 <pre>Execute The command : <i>fs –put movies.csv / </i></pre>
 
 <hr><hr>
